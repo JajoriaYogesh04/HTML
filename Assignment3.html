@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment 3</title>
+    </head>
+    <body>
+        <div>
+            <table border="black">
+                <caption>Student Information</caption>
+                <tr>
+                    <th rowspan="6">Info</th>
+                    <th rowspan="2">Name</th>
+                    <th colspan="2">Address</th>
+                </tr>
+                <tr>
+                    <th>City</th>
+                    <th>House</th>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td>Delhi</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td>Mumbai</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>Kolkata</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td>Pune</td>
+                    <td>4</td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <div>
+            <form action="/server1">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <br>
+                <label for="sex">Sex:</label>
+                <input type="radio" name="sex" id="m" value="male">
+                <label for="m">Male</label>
+                <input type="radio" name="sex" id="f" value="female">
+                <label for="f">Female</label>
+                <br>
+                <label for="cont">Country:</label>
+                <select name="country" id="cont">
+                    <option>Select an option</option>
+                    <option value="ind">India</option>
+                    <option value="nep">Nepal</option>
+                    <option value="usa">USA</option>
+                    <option value="can">Canada</option>
+                </select>
+                <br>
+                <label for="mes">Message:<br></label>
+                <textarea name="message" id="mes" rows="4" cols="30"></textarea>
+                <br>
+                <input type="checkbox" name="subscribe" id="check">
+                <label for="check">Subscribe?</label>
+                <br>
+                <button>Submit</button>
+            </form>
+        </div>
+        <hr>
+        <div>
+            <h1>Feedback Form</h1>
+            <form action="/server2">
+                <label for="name">Name:</label>
+                <input type="text" placeholder="Write your name" id="name" name="name">
+                <br>
+                <label for="mail">Email:</label>
+                <input type="text" placeholder="Write your email" id="mail" name="e-mail">
+                <br>
+                <label for="msg">Message:<br></label>
+                <textarea name="message" id="msg" rows="4" cols="30"></textarea>
+                <br>
+                <label for="rate">Rate us out of 5:<br></label>
+                <input type="radio" name="rate" id="one" value="one">
+                <label for="one">1<br></label>
+                <input type="radio" name="rate" id="two" value="two">
+                <label for="two">2<br></label>
+                <input type="radio" name="rate" id="three" value="three">
+                <label for="three">3<br></label>
+                <input type="radio" name="rate" id="four" value="four">
+                <label for="four">4<br></label>
+                <input type="radio" name="rate" id="five" value="five">
+                <label for="five">5<br></label>
+                <br>
+                <button>Send your message!</button>
+            </form>
+        </div>
+    </body>
+</html>
